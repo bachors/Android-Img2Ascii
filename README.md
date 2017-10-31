@@ -1,4 +1,6 @@
 # Android-Img2Ascii
+[![Release](https://jitpack.io/v/bachors/Android-Img2Ascii.svg)](https://jitpack.io/#bachors/Android-Img2Ascii)
+
 Convert image to ascii.
 
 Gradle
@@ -34,6 +36,8 @@ int quality = 3; // 1 - 3
 Img2Ascii image2ascii = new Img2Ascii();
 String ascii = image2ascii.convert(image, quality);
 
+// textView.setTypeface(monospaceFont);
+// textView.setText(ascii);
 ```
 
 Demo
