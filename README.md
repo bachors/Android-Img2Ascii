@@ -1,4 +1,5 @@
 # Android-Img2Ascii
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Img2Ascii-red.svg?style=flat)](https://android-arsenal.com/details/1/6393)
 [![Release](https://jitpack.io/v/bachors/Android-Img2Ascii.svg)](https://jitpack.io/#bachors/Android-Img2Ascii)
 
 Convert image to ascii.
