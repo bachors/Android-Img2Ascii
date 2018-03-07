@@ -19,7 +19,7 @@ public class Img2Ascii {
     }
 
     public String convert(Bitmap rgbImage, int quality) {
-        if(quality > 3 && quality < 1)
+        if(quality > 3 || quality < 1)
             quality = 3;
         String tx = "";
         int width = rgbImage.getWidth();
