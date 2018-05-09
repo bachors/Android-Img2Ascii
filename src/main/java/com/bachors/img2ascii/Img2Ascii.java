@@ -63,7 +63,7 @@ public class Img2Ascii {
 
         @Override
         protected Void doInBackground(String... arg0) {
-            if(quality > 3 || quality < 1)
+            if(quality > 9 || quality < 1)
                 quality = 3;
             String tx;
             SpannableStringBuilder span = new SpannableStringBuilder();
