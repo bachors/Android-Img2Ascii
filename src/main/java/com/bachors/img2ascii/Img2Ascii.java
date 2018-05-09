@@ -21,6 +21,7 @@ public class Img2Ascii {
     private Bitmap rgbImage;
     private Boolean color = false;
     private int quality = 3;
+    private int qualityColor = 6;
     private Spannable response;
     private Listener listener;
 
@@ -63,8 +64,14 @@ public class Img2Ascii {
 
         @Override
         protected Void doInBackground(String... arg0) {
-            if(quality > 9 || quality < 1)
-                quality = 3;
+            if(color) {
+                quality = quality + qualityColor;
+                if (quality > 5 + qualityColor || quality < 1 + qualityColor)
+                    quality = 3 + qualityColor;
+            }else{
+                if (quality > 5 || quality < 1)
+                    quality = 3;
+            }
             String tx;
             SpannableStringBuilder span = new SpannableStringBuilder();
             int width = rgbImage.getWidth();
