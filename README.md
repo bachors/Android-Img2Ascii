@@ -17,7 +17,7 @@ allprojects {
 ```
 dependencies {
     ...
-    compile 'com.github.bachors:Android-Img2Ascii:1.0'
+    compile 'com.github.bachors:Android-Img2Ascii:2.0'
 }
 ```
 
@@ -30,15 +30,20 @@ Usage
 Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.image);
 // Bitmap image = BitmapFactory.decodeFile(filename);
 
-// quality
-int quality = 3; // 1 - 3
-
-// convert image(bitmap) to ascii(string)
-Img2Ascii image2ascii = new Img2Ascii();
-String ascii = image2ascii.convert(image, quality);
-
-// textView.setTypeface(monospaceFont);
-// textView.setText(ascii);
+new Img2Ascii()
+   .bitmap(image)
+   .quality(3) // 1 - 3
+   //.color(true)
+   .convert(new Img2Ascii.Listener() {
+      @Override
+      public void onProgress(int percentage) {
+         textView.setText(String.valueOf(percentage) + " %");
+      }
+      @Override
+      public void onResponse(Spannable text) {
+         textView.setText(text);
+      }
+   });
 ```
 
 Demo
