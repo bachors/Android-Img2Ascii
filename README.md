@@ -32,7 +32,7 @@ Bitmap image = BitmapFactory.decodeResource(getResources(), R.drawable.image);
 
 new Img2Ascii()
    .bitmap(image)
-   .quality(3) // 1 - 3
+   .quality(3) // 1 - 9
    //.color(true)
    .convert(new Img2Ascii.Listener() {
       @Override
