@@ -48,4 +48,4 @@ new Img2Ascii()
 
 Demo
 -----
-![demo](https://4.bp.blogspot.com/-fs8GtDDO7NI/WfhsyEbABII/AAAAAAAAB38/gpTfmPAkNIsPvs2CuVmEqmXX02NTk0O_ACLcBGAs/s1600/PhotoGrid_1509452593105.jpg)
+![demo](https://i.imgflip.com/29wvub.gif)
