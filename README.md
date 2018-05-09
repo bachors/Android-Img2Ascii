@@ -17,7 +17,7 @@ allprojects {
 ```
 dependencies {
     ...
-    compile 'com.github.bachors:Android-Img2Ascii:2.0'
+    compile 'com.github.bachors:Android-Img2Ascii:1.1'
 }
 ```
 
