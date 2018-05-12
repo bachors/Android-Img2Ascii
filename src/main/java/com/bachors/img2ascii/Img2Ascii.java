@@ -83,13 +83,13 @@ public class Img2Ascii {
                     int red = Color.red(pixel);
                     int green = Color.green(pixel);
                     int blue = Color.blue(pixel);
-                    int brightness = red + green + blue;
-                    brightness = round(brightness / (765 / (chars.length - 1)));
                     if(color) {
                         tx = "#";
                         span.append(tx);
                         span.setSpan(new ForegroundColorSpan(Color.rgb(red, green, blue)), i, i + 1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
                     }else {
+                        int brightness = red + green + blue;
+                        brightness = round(brightness / (765 / (chars.length - 1)));
                         tx = chars[brightness];
                         span.append(tx);
                     }
