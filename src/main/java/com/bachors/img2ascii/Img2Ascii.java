@@ -44,10 +44,9 @@ public class Img2Ascii {
         return this;
     }
 
-    public Img2Ascii convert(Listener listener) {
+    public void convert(Listener listener) {
         this.listener = listener;
         new InstaApi().execute();
-        return this;
     }
 
     @SuppressLint("StaticFieldLeak")
